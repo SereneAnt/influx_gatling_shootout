@@ -1,3 +1,9 @@
+# SBT
 *.log
 project/
 target/
+
+# InfluxDB
+data/
+meta/
+wal/
