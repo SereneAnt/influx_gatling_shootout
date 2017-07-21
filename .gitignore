@@ -1,6 +1,5 @@
 # SBT
 *.log
-project/
 target/
 
 # InfluxDB
