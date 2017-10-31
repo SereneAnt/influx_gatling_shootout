@@ -65,7 +65,7 @@ sbt "gatling:testOnly *InfluxTest"
 ## REST service
 #### Run Benchmarks
 ```sh
-sbt "gatling:testOnly *InfluxTest"
+sbt "gatling:testOnly *RestServiceTest"
 ```
 
 ##Results
