@@ -68,6 +68,6 @@ sbt "gatling:testOnly *InfluxTest"
 sbt "gatling:testOnly *RestServiceTest"
 ```
 
-##Results
+## Results
 Find simulation log and generated reports in `/target/gatling/<test-name-epoch>/` directory, 
 open `index.html` file.
