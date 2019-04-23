@@ -3,15 +3,15 @@ organization := "com.github.sereneant"
 
 version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.6"
 
 enablePlugins(GatlingPlugin)
 
-libraryDependencies += "com.typesafe" % "config" % "1.3.2"
+libraryDependencies += "com.typesafe" % "config" % "1.3.4"
 
 libraryDependencies ++= Seq(
-  "io.gatling.highcharts" % "gatling-charts-highcharts" % "2.3.0" % Test,
-  "io.gatling"            % "gatling-test-framework"    % "2.3.0" % Test
+  "io.gatling.highcharts" % "gatling-charts-highcharts" % "3.0.0" % Test,
+  "io.gatling"            % "gatling-test-framework"    % "3.0.0" % Test
 //  "io.netty" % "netty-codec-http" % "4.0.36.Final",
 //  "io.netty" % "netty-transport-native-epoll" % "4.0.36.Final" classifier "linux-x86_64"
 )

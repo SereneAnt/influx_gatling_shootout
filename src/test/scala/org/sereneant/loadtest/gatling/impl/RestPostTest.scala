@@ -2,7 +2,7 @@ package org.sereneant.loadtest.gatling.impl
 
 import org.sereneant.loadtest.gatling.PostTest
 
-class RestServiceTest extends PostTest {
+class RestPostTest extends PostTest {
 
   override def postRequestName = "rest"
   override def postUrl = "/all"

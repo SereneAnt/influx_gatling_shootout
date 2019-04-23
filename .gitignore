@@ -2,6 +2,8 @@
 *.log
 target/
 
+.idea
+
 # InfluxDB
 data/
 meta/

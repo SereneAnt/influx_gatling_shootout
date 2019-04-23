@@ -65,7 +65,8 @@ sbt "gatling:testOnly *InfluxTest"
 
 **Run Benchmarks**
 ```sh
-sbt "gatling:testOnly *RestServiceTest"
+sbt "gatling:testOnly *RestGetTest"
+sbt "gatling:testOnly *RestPostTest"
 ```
 
 ## 4. Results

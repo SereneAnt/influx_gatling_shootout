@@ -3,7 +3,7 @@ package org.sereneant.loadtest.gatling
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-abstract class PostTest extends Simulation with WithConfig {
+abstract class GetTest extends Simulation with WithConfig {
 
   private val lowQps = config.lowQps
   private val stressQps = lowQps * config.stressFactor
@@ -15,14 +15,12 @@ abstract class PostTest extends Simulation with WithConfig {
     .shareConnections
 
   def postRequestName: String
-  def postUrl: String
-  def postBody: String
+  def getUrl: String
   def postStatus: Int
 
   private val post = exec(
     http(postRequestName)
-      .post(postUrl)
-      .body(StringBody(postBody))
+      .get(getUrl)
       .check(status.in(postStatus))
   )
 
